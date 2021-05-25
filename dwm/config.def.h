@@ -27,9 +27,9 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     iscentered   isfloating   noswallow   monitor */
-    { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1,         -1 },
-	{ "St",       NULL,       NULL,       0,            0,           1,           0,          -1 },
+	/* class      instance    title       tags mask     iscentered   isfloating   isterminal   noswallow   monitor */
+    { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           0,           -1,         -1 },
+	{ "St",       NULL,       NULL,       0,            0,           0,           1,           0,          -1 },
 };
 
 /* layout(s) */
