@@ -36,8 +36,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     iscentered   isfloating   isterminal   noswallow   monitor */
-    { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           0,           -1,         -1 },
+    { "firefox",  NULL,       NULL,       1 << 1,       0,           0,           0,           -1,         -1 },
+    { "discord",  NULL,       NULL,       1 << 3,       0,           0,           0,           -1,         -1 },
+    { "Steam",    NULL,       NULL,       1 << 4,       0,           0,           0,           -1,         -1 },
+    { "Emacs",    NULL,       NULL,       1 << 0,       0,           0,           0,           -1,         -1 },
 	{ "St",       NULL,       NULL,       0,            0,           0,           1,           0,          -1 },
+	{ "mpv",      NULL,       NULL,       0,            0,           1,           0,           0,          -1 },
 };
 
 /* layout(s) */
