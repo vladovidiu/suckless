@@ -39,7 +39,7 @@ static const Rule rules[] = {
     { "firefox",  NULL,       NULL,       1 << 1,       0,           0,           0,           -1,         -1 },
     { "discord",  NULL,       NULL,       1 << 3,       0,           0,           0,           -1,         -1 },
     { "Steam",    NULL,       NULL,       1 << 4,       0,           0,           0,           -1,         -1 },
-    { "Emacs",    NULL,       NULL,       1 << 0,       0,           0,           0,           -1,         -1 },
+    /* { "Emacs",    NULL,       NULL,       1 << 0,       0,           0,           0,           -1,         -1 }, */
 	{ "St",       NULL,       NULL,       0,            0,           0,           1,           0,          -1 },
 	{ "mpv",      NULL,       NULL,       0,            0,           1,           0,           0,          -1 },
 };
@@ -73,6 +73,7 @@ static const char *dmenucmd[] = { "dmenu_run", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+static const char *background_changer[] = { "/home/vladovidiu/.config/feh.sh", NULL };
 
 #include "movestack.c"
 static Key keys[] = {
@@ -105,6 +106,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacsclient -cna 'emacs'") },
+	{ MODKEY|ControlMask,           XK_b,      spawn,          { .v = background_changer } },
+	{ MODKEY|ControlMask,           XK_y,      spawn,          SHCMD("ytfzf -D") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
