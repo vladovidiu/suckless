@@ -16,11 +16,11 @@ static const char *fonts[]          = {
   "JoyPixels:size=10:antialias=true:autohint=true"
 };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#282828";
-static const char col_gray2[]       = "#504945";
-static const char col_gray3[]       = "#bdae93";
-static const char col_gray4[]       = "#ebdbb2";
-static const char col_cyan[]        = "#cc241d";
+static const char col_gray1[]       = "#191724";
+static const char col_gray2[]       = "#26233a";
+static const char col_gray3[]       = "#ebbcba";
+static const char col_gray4[]       = "#f6c177";
+static const char col_cyan[]        = "#c4a7e7";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
