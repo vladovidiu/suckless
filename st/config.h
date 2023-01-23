@@ -7,7 +7,7 @@
  */
 static char *font =
     "PragmataPro Mono Liga:pixelsize=22:antialias=true:autohint=true";
-static char *font2[] = {"JoyPixels:pixelsize=10:antialias=true:autohint=true"};
+static char *font2[] = {"Symbola:pixelsize=12:antialias=true:autohint=true"};
 static int borderpx = 0;
 
 /*

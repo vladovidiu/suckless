@@ -65,8 +65,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function    format          argument */
-	{ cpu_perc,    "[CPU %3s%%] ", NULL    },
-	{ ram_perc,    "[RAM %2s%%] ", NULL    },
+	/* { cpu_perc,    "[CPU %3s%%] ", NULL    }, */
+	/* { ram_perc,    "[RAM %2s%%] ", NULL    }, */
 	/* { run_command, "[pkgs %s] ",    "checkupdates | wc -l" }, */
-	{ datetime,    "%s",           "%F %T" },
+	/* { datetime,    "%s",           "%F %T" }, */
+	/**/
+	{ cpu_perc, "  ^c#eb6f92^ %s%%  ", 	    NULL 	 },
+	{ ram_used, "^c#ebbcba^ %s ^C8^│", 	    NULL 	 },
+	{ datetime, "^c#9ccfd8^%s",          	 " ^C14^ %a %b %d,%l:%M %p "	 },
 };
